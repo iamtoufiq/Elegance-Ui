@@ -1,0 +1,146 @@
+/* Avatar starts here */
+
+/* Avatar sizes */
+
+/* avatar xs */
+
+.avatar-xs {
+  position: relative;
+  vertical-align: middle;
+  font-size: 4.4px;
+}
+.avatar-xs img {
+  width: var(--l);
+  height: var(--l);
+  border-radius: var(--border-radius-circle);
+  border: solid 1px var(--primary);
+}
+
+/* avatar s */
+
+.avatar-s {
+  position: relative;
+  vertical-align: middle;
+  font-size: var(--is-1);
+  border-radius: var(--border-radius-circle);
+  font-weight: var(--semi-bold);
+}
+.avatar-s img {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--border-radius-circle);
+  border: solid 2px var(--primary);
+}
+
+/* avatar m */
+
+.avatar-m {
+  position: relative;
+  vertical-align: middle;
+  font-size: var(--2);
+  font-weight: var(--semi-bold);
+}
+.avatar-m img {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--border-radius-circle);
+  border: solid var(--micro) var(--primary);
+}
+
+/* avatar l */
+
+.avatar-l {
+  position: relative;
+  vertical-align: middle;
+  font-size: 13px;
+}
+.avatar-l img {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--border-radius-circle);
+  border: solid var(--micro) var(--primary);
+}
+
+/* avatar xl */
+
+.avatar-xl {
+  position: relative;
+  vertical-align: middle;
+  font-size: 17px;
+}
+.avatar-xl img {
+  width: 120px;
+  height: 120px;
+  border-radius: var(--border-radius-circle);
+  border: solid var(--micro) var(--primary);
+}
+
+/* avatar with badge */
+
+.avatar-badge {
+  position: absolute;
+  border: solid white;
+  top: 4.8em;
+  left: 5em;
+  height: 2em;
+  width: 2em;
+  background-color: var(--primary);
+  border-radius: var(--border-radius-circle);
+}
+
+/* avatar with text */
+
+.avatar-text {
+  display: inline-flex;
+  background-color: var(--tertiary);
+  width: 7em;
+  height: 7em;
+  border-radius: var(--border-radius-circle);
+  justify-content: center;
+  align-items: center;
+  border: solid var(--micro) var(--primary);
+}
+.avatar-text p {
+  font-size: 3em;
+  color: var(--dark);
+}
+
+/* icon badge */
+
+.icon-badge {
+  position: relative;
+}
+.icon-badge span {
+  position: absolute;
+  right: -1.5em;
+  top: -1.2em;
+  height: 2em;
+  min-width: 2em;
+  padding: 2px;
+  border-radius: var(--border-radius-circle);
+  border: 2px solid var(--permanent-white);
+  display: flex;
+  background-color: var(--primary);
+  color: var(--permanent-white);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 0.6em;
+  box-sizing: border-box;
+}
+
+/* text badge */
+
+.text-badge {
+  position: relative;
+}
+.text-badge span {
+  font-size: 0.8em;
+  margin-left: 0.1em;
+  border-radius: 0.7em;
+  position: absolute;
+  color: var(--white);
+  background-color: var(--primary);
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}

@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- <link rel="stylesheet" href="../main.css" /> -->
+  <link rel="stylesheet" href="../main.css" />
+
+  <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+
+  <link rel="manifest" href="./images/site.webmanifest" />
+
+  <title>Elegance Ui | Documentation</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar li-shadow">
+    <div class="nav-brand">
+      <a href="" class="logo-a">
+        <!-- <img class="logo-s" src="/documentation/images/02 - Colorful - Icon Only.png" alt="Lucid Ui logo" /> -->
+        <img class="logo-s" src="../documentation/images/02 - Colorful - Icon Only.png" alt="Elegance Ui logo" />
+      </a>
+    </div>
+    <div class="nav-hamburger">
+      <i class="dark-mode fas m-r-2 fas fa-moon"></i>
+      <i id="hamburger" class="fas fa-bars"></i>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-start">
+        <!-- <a href="/index.html" class="nav-item link">Home</a> -->
+        <a href="../index.html" class="nav-item link">Home</a>
+        <!-- <a href="/documentation/install.html" class="nav-item link" -->
+        <a href="../documentation/install.html" class="nav-item link">Introduction</a>
+        <!-- <a href="/documentation/documentation.html" class="nav-item link" -->
+        <a href="../documentation/documentation.html" class="nav-item link">Documentation</a>
+      </div>
+      <div class="nav-end">
+        <button class="dark-mode btn-icon nav-icons m-x-1">
+          <i class="fas fa-moon"></i>
+        </button>
+
+        <a href="https://www.linkedin.com/in/toufiq-choudhari-56208b203/">
+          <button class="btn-icon nav-icons m-x-1">
+            <i class="fab fa-linkedin is-4"></i>
+          </button>
+        </a>
+
+        <a href="https://github.com/iamtoufiq">
+          <button class="btn-icon nav-icons m-x-1">
+            <i class="fab fa-github-square is-4"></i>
+          </button>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Documentation -->
+
+  <div class="grid-20-80 grid-documentation">
+    <!-- component-list -->
+
+    <div class="component-list li-shadow p-l-2">
+      <div class="textbox flex-col ">
+        <div class="title is-4 p-y-2">Components</div>
+        <a href="#alert" class="link m-y-1 light is-dark is-4">Alert</a>
+        <a href="#avatar" class="link m-y-1 light is-dark is-4">Avatar</a>
+        <a href="#badge" class="link m-y-1 light is-dark is-4">Badge</a>
+        <a href="#button" class="link m-y-1 light is-dark is-4">Button</a>
+        <a href="#card" class="link m-y-1 light is-dark is-4">Card</a>
+        <a href="#form" class="link m-y-1 light is-dark is-4">Form</a>
+        <a href="#image" class="link m-y-1 light is-dark is-4">Image</a>
+        <a href="#list" class="link m-y-1 light is-dark is-4">List</a>
+
+        <a href="#modal" class="link m-y-1 light is-dark is-4">Modal</a>
+        <a href="#navigation" class="link m-y-1 light is-dark is-4">Navigation</a>
+        <a href="#rating" class="link m-y-1 light is-dark is-4">Rating</a>
+        <a href="#grid" class="link m-y-1 light is-dark is-4">Grid</a>
+        <a href="#typography" class="link m-y-1 light is-dark is-4">Typography</a>
+        <a href="#toast" class="link m-y-1 light is-dark is-4">Toast</a>
+        <a href="#slider" class="link p-dw-4 light is-dark is-4">Slider</a>
+      </div>
+    </div>
+
+    <!-- components -->
+
+    <div class="component p-l-3">
+      <!-- Alert -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="alert" class="title p-y-1 is-6">Alert</div>
+          <div class="subtitle regular is-4">
+            Alerts are used to draw users' attention to vital information while avoiding interfering with their
+            workflow.
+          </div>
+          <p class="text is-3 is-dark">
+            There are 6 different sorts of alert. Primary, warning, success, and error alerts, as well as errors with
+            links and closes.
+            <br />
+            To use alert you can just use class name alert, and then add
+            <span style="color: var(--primary)">alert-primary, alert-info, alert-error, alert-warning,
+              alert-link, alert-close</span>
+            to the same div.Additionally, you can combine an alert with a link and an alert with a close button by
+            adding the appropriate CSS classes and some simple HTML.
+          </p>
+        </div>
+        <div class="showcase flex-col m-y-4">
+          <!-- info alert -->
+          <div class="alert alert-info is-3 semibold">
+            <i class="alert-icon fas fa-info-circle"></i>
+            <p class="alert-text">This is an example of info Alert!</p>
+          </div>
+          <!-- alert success -->
+          <div class="alert alert-success is-3 semibold">
+            <i class="alert-icon fas fa-check-circle"></i>
+            <p class="alert-text">This is an example of success Alert!</p>
+          </div>
+          <!-- alert warning -->
+          <div class="alert alert-warning is-3 semibold">
+            <i class="alert-icon fas fa-exclamation-triangle"></i>
+            <p class="alert-text">This is an example of warning Alert!</p>
+          </div>
+          <!-- alert error -->
+          <div class="alert alert-error is-3 alert-close">
+            <i class="alert-icon fas fa-exclamation-circle"></i>
+            <p class="alert-text">
+              This is an example of error Alert with close button!
+            </p>
+            <button class="btn-close"><i class="fas fa-times"></i></button>
+          </div>
+          <!-- alert with link -->
+          <div class="alert alert-info is-3 alert-link">
+            <i class="alert-icon fas fa-info-circle"></i>
+            <p class="alert-text">
+              This is an example of primary Alert with a link.
+            </p>
+            <a class="link underline" href="">Check this</a>
+          </div>
+        </div>
+
+        <div id="cs-avatar" class="code-snippet m-y-4">
+          <code>
+              <iframe
+                id="avatarCode"
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520info%2520alert%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2520is-3%2520semibold%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522alert-icon%2520fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253Cp%2520class%253D%2522alert-text%2522%253EThis%2520is%2520an%2520example%2520of%2520info%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520alert%2520success%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-success%2520is-3%2520semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522alert-icon%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%253Cp%2520class%253D%2522alert-text%2522%253EThis%2520is%2520an%2520example%2520of%2520success%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520alert%2520warning%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-warning%2520is-3%2520semibold%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522alert-icon%2520fas%2520fa-exclamation-triangle%2522%253E%253C%252Fi%253E%253C%252Fi%253E%253Cp%2520class%253D%2522alert-text%2522%253EThis%2520is%2520an%2520example%2520of%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520warning%2520Alert%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520alert%2520error%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-error%2520is-3%2520alert-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522alert-icon%2520fas%2520fa-exclamation-circle%2522%253E%253C%252Fi%253E%253Cp%2520class%253D%2522alert-text%2522%253EThis%2520is%2520an%2520example%2520of%2520error%2520Alert%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520with%2520close%2520button%21%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-close%2522%253E%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520alert%2520with%2520link%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522alert%2520alert-info%2520is-3%2520alert-link%2522%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522alert-icon%2520fas%2520fa-info-circle%2522%253E%253C%252Fi%253E%253Cp%2520class%253D%2522alert-text%2522%253E%2520This%2520is%2520an%2520example%2520of%2520primary%2520Alert%2520with%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520a%2520link.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520class%253D%2522link%2520underline%2522%2520href%253D%2522%2522%253ECheck%2520this%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 1024px; */
+                  height: 400px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+      <!-- Avaatar -->
+      <div class="component-section m-up-6">
+        <div class="textbox">
+          <div id="avatar" class="title p-y-1 is-6">Avatar</div>
+          <div class="subtitle regular is-4">
+            The user's profile photo can be shown using an avatar on the profile information page, in the navigation
+            bar, and in blog grid elements.
+          </div>
+          <p class="text is-3 is-dark">
+            Avatars in the Elegance Ui come in two categories: text-only and image-only. <br />
+            For each category, you have a choice of sizes. To use
+            avatar with image
+            <span style="color: var(--primary)">add class avatar-"size" to a div and put image inside it.</span>
+            Use
+            <span style="color: var(--primary)">avatar with text adding additional class avatar-text</span>
+            and p tag inside it.
+          </p>
+        </div>
+        <div class="showcase avatar-showcase flex-row m-y-6">
+          <!-- avatar xs -->
+          <div class="avatar-xs">
+            <!-- <img src="images/avatar-male.jpg" alt="" class="" /> -->
+            <img src="./images/avatar-male.jpg" alt="" class="" />
+          </div>
+          <!-- avatar s -->
+          <div class="avatar-s">
+            <!-- <img src="images/avatar-male.jpg" alt="" class="" /> -->
+            <img src="./images/avatar-male.jpg" alt="" class="" />
+          </div>
+          <!-- avatar m -->
+          <div class="avatar-m">
+            <!-- <img src="images/avatar-male.jpg" alt="" class="" /> -->
+            <img src="./images/avatar-male.jpg" alt="" class="" />
+          </div>
+          <!-- avatar l -->
+          <div class="avatar-l">
+            <!-- <img src="images/avatar-male.jpg" alt="" class="" /> -->
+            <img src="./images/avatar-male.jpg" alt="" class="" />
+          </div>
+          <!-- avatar xl -->
+          <div class="avatar-xl">
+            <!-- <img src="images/avatar-male.jpg" alt="" class="" /> -->
+            <img src="./images/avatar-male.jpg" alt="" class="" />
+          </div>
+          <!-- text only avatar -->
+          <div class="avatar-s avatar-text">
+            <p>AB</p>
+          </div>
+          <div class="avatar-m avatar-text">
+            <p>AB</p>
+          </div>
+          <div class="avatar-l avatar-text">
+            <p>AB</p>
+          </div>
+          <div class="avatar-xl avatar-text">
+            <p>AB</p>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520avatar%2520xs%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-male.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520avatar%2520s%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-male.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520avatar%2520m%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-m%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-male.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520avatar%2520l%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-l%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-male.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520avatar%2520xl%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-male.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520text%2520only%2520avatar%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-s%2520avatar-with-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-m%2520avatar-with-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-l%2520avatar-with-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-xl%2520avatar-with-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%253EAB%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 492px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+      <!-- Badge -->
+      <div class="m-up-6 component-section">
+        <div class="textbox">
+          <div id="badge" class="title p-y-1 is-6">Badge</div>
+          <div class="subtitle regular is-4">
+            There are three different badge categories. Icon, text, and avatar badges.
+          </div>
+          <p class="text is-3 is-dark">
+            There are three categories of badges available. Avatar badge, icon
+            badge, text badge. <br />
+            You can use avatar badge with any size of avatar. To use
+            <span style="color: var(--primary)">add span with class avatar-badge inside avatar div.</span>
+          </p>
+        </div>
+        <div class="showcase flex-row avatar-showcase m-y-6">
+          <!-- avatar with badge -->
+          <div class="avatar-xs">
+            <!-- <img src="images/avatar-female.jpg" alt="" class="" /><span class="avatar-badge"></span> -->
+            <img src="./images/avatar-female.jpg" alt="" class="" /><span class="avatar-badge"></span>
+          </div>
+          <div class="avatar-s">
+            <img src="./images/avatar-female.jpg" alt="" class="" /><span class="avatar-badge"></span>
+          </div>
+          <div class="avatar-m">
+            <img src="./images/avatar-female.jpg" alt="" class="" /><span class="avatar-badge"></span>
+          </div>
+          <div class="avatar-l">
+            <img src="./images/avatar-female.jpg" alt="" class="" /><span class="avatar-badge"></span>
+          </div>
+          <div class="avatar-xl">
+            <img src="./images/avatar-female.jpg" alt="" class="" /><span class="avatar-badge"></span>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520avatar%2520with%2520badge%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-xs%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-female.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-badge%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-s%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-female.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-badge%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-m%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-female.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-badge%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-l%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-female.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-badge%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522avatar-xl%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522avatar-female.jpg%2522%2520alt%253D%2522%2522%2520class%253D%2522%2522%2520%252F%253E%253Cspan%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522avatar-badge%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 546px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox m-up-6">
+          <div class="subtitle m-up-6 is-4 is-dark">
+            Badges on icon and text
+          </div>
+          <p class="text is-3 is-dark">
+            To use badge icon
+            <span style="color: var(--primary)">add badge icon to any i tag and put span inside it.</span>
+            Icon badge will position itself, whatever the size of icon. <br />
+            Use text badge by adding
+            <span style="color: var(--primary)">text-badge to p tag and put a span with a text inside it.</span>
+          </p>
+        </div>
+
+        <div class="m-dw-6 showcase flex-row badge-showcase m-up-4">
+          <!-- icon badge -->
+
+          <i class="fas fa-home icon-badge is-4">
+            <span>1</span>
+          </i>
+          <i class="fas icon-badge is-5 fa-people-carry">
+            <span></span>
+          </i>
+
+          <!-- text badge -->
+
+          <p class="text-badge is-3">
+            Lorem ipsum dolor sit amet.
+            <span>new</span>
+          </p>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520icon%2520badge%2520--%253E%250A%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-home%2520icon-badge%2520is-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fi%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520icon-badge%2520is-5%2520fa-people-carry%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fi%253E%250A%250A%2520%2520%2520%2520%253C%21--%2520text%2520badge%2520--%253E%250A%250A%2520%2520%2520%2520%253Cp%2520class%253D%2522text-badge%2520is-3%2522%253E%250A%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet.%250A%2520%2520%2520%2520%2520%2520%253Cspan%253Enew%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fp%253E"
+                style="
+                  /* width: 430px; */
+                  height: 350px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+
+      <!-- button -->
+      <div class="m-up-6 component-section">
+        <div class="textbox">
+          <div id="button" class="title p-y-1 is-6">Button</div>
+          <div class="subtitle regular is-4">
+            Buttons,are an essential part of any website or application. We offer a wide range of buttons and their
+            states to ensure you can create the perfect user experience. You may use either tag or
+            button element to add the respective classes in order to get started quickly and easily.
+          </div>
+          <p class="text is-3 is-dark">
+            First category of buttons are primary buttons.
+            <span style="color: var(--primary)">Primary button, primary link, icon button and button with
+              icon.</span>
+            Every button in Elegance Ui is fully customizable by using properties
+            is-"size", is-"font-color", has-"background-color" and font
+            weights.
+          </p>
+        </div>
+        <!-- button primary -->
+        <div class="m-y-6 showcase button-showcase flex-row m-y-4">
+          <button class="btn-primary btn-medium">primary button</button>
+          <a href="" class="link is-3 underline">go somewhere</a>
+          <button class="btn-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button class="btn-medium btn-w-icon btn-primary">
+            <i class="fas fa-shopping-cart"></i>icon button
+          </button>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-medium%2522%253Eprimary%2520button%253C%252Fbutton%253E%250A%250A%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522link%2520is-3%2520underline%2522%253Ego%2520somewhere%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%253C%252Fbutton%253E%250A%250A%2520%2520%2520%253Cbutton%2520class%253D%2522btn-medium%2520btn-w-icon%2520btn-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253Eicon%2520button%250A%2520%2520%2520%253C%252Fbutton%253E"
+                style="
+                  /* width: 538px; */
+                  height: 276px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox m-up-6">
+          <div class="subtitle is-4 is-dark">Button secondary</div>
+          <p class="text is-3 is-dark">
+            Second category is of secondary buttons which consists of
+            <span style="color: var(--primary)">secondary button secondary link and secondary
+              icon-button.</span>
+          </p>
+        </div>
+        <!-- button secondary -->
+        <div class="showcase button-showcase flex-row m-up-4 m-dw-6">
+          <button class="btn-medium btn-secondary">secondary button</button>
+          <a href="" class="link-secondary is-3">secondary link</a>
+          <button class="btn-medium btn-w-icon btn-primary btn-grey">
+            <i class="fas fa-shopping-cart"></i>Icon button
+          </button>
+        </div>
+        <div class="code-snippet m-y-3">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-medium%2520btn-secondary%2522%253Esecondary%2520button%253C%252Fbutton%253E%250A%250A%253Ca%2520href%253D%2522%2522%2520class%253D%2522link-secondary%2520is-3%2522%253Esecondary%2520link%253C%252Fa%253E%250A%250A%253Cbutton%2520class%253D%2522btn-medium%2520btn-w-icon%2520btn-primary%2520btn-grey%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253EIcon%2520button%250A%253C%252Fbutton%253E"
+                style="
+                  /* width: 546px; */
+                  height: 203px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox m-up-6">
+          <div class="subtitle is-4 is-dark">
+            Rounded and disabled buttons
+          </div>
+          <p class="text is-3 is-dark">
+            You can add rounded borders to any button by simply giving it a
+            class. You can also
+            <span style="color: var(--primary)">disable a button by adding class btn-disable to it</span>
+          </p>
+        </div>
+        <!-- button disabled and rounded -->
+        <div class="showcase button-showcase flex-row m-y-4">
+          <button class="btn-medium btn-rounded btn-primary">
+            rounded button
+          </button>
+          <button class="btn-medium btn-secondary btn-rounded">
+            round secondary
+          </button>
+          <button class="btn-medium btn-rounded btn-primary btn-disabled">
+            disabled button
+          </button>
+        </div>
+        <div class="code-snippet m-y-5">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-medium%2520btn-rounded%2520btn-primary%2522%253Erounded%2520button%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-medium%2520btn-rounded%2520btn-primary%2520btn-disabled%2522%253E%250A%2520%2520%2520disabled%2520button%250A%253C%252Fbutton%253E"
+                style="
+                  /* width: 607px; */
+                  height: 166px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <!-- button sizes -->
+        <div class="textbox m-up-6">
+          <div class="subtitle is-4 is-dark">Button with different sizes</div>
+          <p class="text is-3 is-dark">
+            There are 3 pre-defined button sizes
+            <span style="color: var(--primary)">btn-small, btn-medium, btn-large.</span>
+            <br />
+            Additionaly you can change the button size by changing font size
+            and padding by using Elegance Ui utility classes.
+          </p>
+        </div>
+        <div class="showcase button-showcase flex-row m-y-4">
+          <button class="btn-primary shadow btn-small">small</button>
+          <button class="btn-primary shadow btn-medium">medium</button>
+          <button class="btn-primary shadow btn-large">large</button>
+        </div>
+        <div class="code-snippet m-y-5">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn-primary%2520btn-small%2522%253Esmall%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-primary%2520btn-medium%2522%253Emedium%253C%252Fbutton%253E%250A%250A%253Cbutton%2520class%253D%2522btn-primary%2520btn-large%2522%253Elarge%253C%252Fbutton%253E"
+                style="
+                  /* width: 453px; */
+                  height: 166px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <!-- button float -->
+        <div class="textbox m-up-6">
+          <div class="subtitle is-4 is-dark">Misc buttons</div>
+          <p class="text is-3 is-dark">
+            The floating button can be added by using
+            <span style="color: var(--primary)">btn-float.</span>
+            Also you can have buttons of different colors by just
+            <span style="color: var(--primary)">adding btn-grey (to give grey hover) and has-"color that you
+              want to have"</span>
+          </p>
+        </div>
+        <div class="showcase button-showcase flex-row m-y-4">
+          <a href="" class="btn-float shadow"><i class="fas fa-plus"></i></a>
+          <button class="btn-medium btn-primary shadow has-black">
+            Black
+          </button>
+          <button class="btn-medium btn-primary shadow has-red">Red</button>
+          <button class="btn-medium btn-primary shadow has-green">
+            Green
+          </button>
+          <button class="btn-medium btn-primary shadow has-yellow">
+            Yellow
+          </button>
+        </div>
+        <div class="code-snippet m-y-5">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Ca%2520href%253D%2522%2522%2520class%253D%2522btn-float%2522%253E%253Ci%2520class%253D%2522fas%2520fa-plus%2522%253E%253C%252Fi%253E%253C%252Fa%253E"
+                style="
+                  /* width: 500px; */
+                  height: 92px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+      <!-- Cards -->
+      <div class="component-section m-up-6">
+        <div class="textbox">
+          <div id="card" class="title p-y-1 is-6">Cards</div>
+          <div class="subtitle regular is-4">
+            Cards are used to display information about a user's purchases, such as product specifications.
+          </div>
+          <p class="text is-3 is-dark">
+            Elegance Ui has got you covered in the cards department with its wide
+            range of cards. <br />
+            First we have vertical card with
+            <span style="color: var(--primary)">customizable badge, close button, icon and number of
+              buttons.</span>
+            customizable badge, close button, icon and number of buttons. The
+            first code snippet is of card with badge,close button, icon and
+            the second code snippet is card without those.
+          </p>
+        </div>
+        <!-- vertical card -->
+        <div class="showcase cards-showcase m-y-6">
+          <div class="card shadow">
+            <div class="card-head">
+              <button class="card-cross btn-close is-medium">
+                <i class="fas fa-times"></i>
+              </button>
+              <span class="card-icon"><i class="fas fa-heart"></i></span>
+              <span class="card-badge">new</span>
+              <div class="card-image">
+                <img src="https://picsum.photos/310/250" alt="card image" srcset="" class="card-image-img" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="textbox">
+                <div class="title">Cart Title</div>
+                <div class="subtitle">Subtitle</div>
+              </div>
+              <div class="textbox">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quia, velit.
+                </p>
+                <p class="CTA-text">$376</p>
+              </div>
+              <div class="btn-vertical">
+                <button class="btn-primary btn-w-icon btn-small">
+                  <i class="fas fa-shopping-cart"></i>Buy Now
+                </button>
+                <button class="btn-secondary btn-small">
+                  Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- vertical without badge and close-->
+          <div class="card shadow">
+            <div class="card-head">
+              <div class="card-image">
+                <img src="https://picsum.photos/310/250" alt="card image" srcset="" class="card-image-img" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="textbox">
+                <div class="title">Cart Title</div>
+                <div class="subtitle">Subtitle</div>
+              </div>
+              <div class="textbox">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quia, velit.
+                </p>
+                <p class="CTA-text">$376</p>
+              </div>
+              <div class="btn-vertical">
+                <button class="btn-primary btn-w-icon btn-small">
+                  <i class="fas fa-shopping-cart"></i>Buy Now
+                </button>
+                <button class="btn-secondary btn-small">
+                  Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=816.5&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520vertical%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522showcase%2520cards-showcase%2520m-y-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-cross%2520btn-close%2520is-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253Enew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F310%252F250%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-image-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECart%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253ESubtitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quia%252C%2520velit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522CTA-text%2522%253E%2524376%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-w-icon%2520btn-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253EBuy%2520Now%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-secondary%2520btn-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520wishlist%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 631px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=564.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520vertical%2520card%2520without%2520badge%252Cicon%252Cclose%2520button--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F310%252F250%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-image-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECart%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253ESubtitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520adipisicing%2520elit.Quia%252C%2520velit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522CTA-text%2522%253E%2524376%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-w-icon%2520btn-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253EBuy%2520Now%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-secondary%2520btn-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520wishlist%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 565px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <!-- horizontal cards -->
+        <div class="textbox">
+          <div class="subtitle is-4 is-dark">Horizontal Card</div>
+          <p class="text is-3 is-dark">
+            The horizontal card has the same customization options as the vertical card and is completely responsive.
+          </p>
+        </div>
+
+        <div class="m-y-6">
+          <div class="card showcase-horizontal-card card-horizontal shadow">
+            <div class="card-head">
+              <span class="card-icon"><i class="fas fa-heart"></i></span>
+              <span class="card-badge">new</span>
+              <div class="card-image">
+                <img src="https://picsum.photos/135/150" alt="card image" srcset="" class="card-image-img" />
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="textbox">
+                <div class="title">Cart Title</div>
+                <div class="subtitle">Subtitle</div>
+              </div>
+              <div class="textbox">
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quia, velit. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Lorem ipsum dolor sit amet. Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <p class="CTA-text">$376</p>
+              </div>
+              <div class="btn-horizontal">
+                <button class="btn-primary btn-medium btn-w-icon">
+                  <i class="fas fa-shopping-cart"></i>Buy Now
+                </button>
+                <button class="btn-secondary btn-medium">
+                  Add to wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=564.75&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-horizontal%2520shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253Enew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F155%252F270%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-image-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECart%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253ESubtitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisic%2520ingelit.%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quia%252Cvelit.%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520adipisicing%2520elit.Lorem%2520ipsum%2520dolor%2520sit%2520amet.%2520Lorem%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ipsum%2520dolor%2520sit%2520amet.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522CTA-text%2522%253E%2524376%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-medium%2520btn-w-icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253EBuy%2520Now%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-secondary%2520btn-medium%2522%253EAdd%2520to%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520wishlist%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 565px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+
+        <!-- text overlay card and text only card -->
+        <div class="textbox m-up-6">
+          <div class="subtitle is-4 is-dark">
+            Text overlay card and text only card
+          </div>
+          <p class="text is-3 is-dark">
+            Below is the code snippet for text overlay card and text only
+            card, the font size is customizable in all the cards.
+          </p>
+        </div>
+        <div class="showcase cards-showcase flex-row m-y-6">
+          <!-- text overlay card -->
+
+          <div class="card shadow">
+            <div class="card-overlay">
+              <div class="card-head">
+                <button class="card-cross btn-close">
+                  <i class="fas fa-times"></i>
+                </button>
+                <span class="card-icon"><i class="fas fa-heart"></i></span>
+                <span class="card-badge">new</span>
+                <div class="card-image">
+                  <img src="https://picsum.photos/310/250" alt="card image" srcset="" class="card-image-img" />
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="textbox">
+                  <div class="title">Cart Title</div>
+                  <div class="subtitle">Subtitle</div>
+                </div>
+                <div class="textbox">
+                  <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quia, velit.
+                  </p>
+                  <p class="CTA-text">$376</p>
+                </div>
+                <div class="btn-vertical">
+                  <button class="btn-primary btn-w-icon btn-small">
+                    <i class="fas fa-shopping-cart"></i>Buy Now
+                  </button>
+                  <button class="btn-secondary btn-small">
+                    Add to wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="card-overlay-text">
+              <div class="textbox">
+                <div class="title is-dark is-5">Out of Stock</div>
+              </div>
+            </div>
+          </div>
+          <!-- Text only card -->
+
+          <div class="card card-text-only shadow">
+            <button class="card-cross btn-close is-medium">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="card-body">
+              <div class="textbox">
+                <div class="title">Cart Title</div>
+                <div class="subtitle">Subtitle</div>
+                <p class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Quia, velit. Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Inventore sunt nulla itaque quas dolores
+                  ducimus fugit officia rem explicabo sequi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520text%2520overlay%2520card%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-cross%2520btn-close%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-icon%2522%253E%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card-badge%2522%253Enew%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F310%252F250%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-image-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECart%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253ESubtitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.Quia%252C%2520velit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522CTA-text%2522%253E%2524376%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-vertical%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520btn-w-icon%2520btn-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253EBuy%2520Now%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-secondary%2520btn-small%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Add%2520to%2520wishlist%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-overlay-text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520is-dark%2520is-4%2522%253EOut%2520of%2520Stock%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 738px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520Text%2520only%2520card%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-text-only%2520shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-cross%2520btn-close%2520is-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECart%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253ESubtitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%252C%2520consectetur%2520adipisicing%2520elit.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Quia%252C%2520velit.%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520adipisicing%2520elit.%2520Inventore%2520sunt%2520nulla%2520itaque%2520quas%2520dolores%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520ducimus%2520fugit%2520officia%2520rem%2520explicabo%2520sequi.%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 638px; */
+                  height: 405px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+
+      <!-- form -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="form" class="title p-y-1 is-6">Form</div>
+          <div class="subtitle regular is-4">
+            The form fields are listed below, and form validation is stylized as well.
+          </div>
+          <p class="text is-3 is-dark">
+            The text input form has focus state, success and error state. To
+            use this input you need
+            <span style="color: var(--primary)">form-div wrapper and inside that form-label and an input with
+              form input class.</span>
+
+            There is also the textarea. <br />
+            Just define
+            <span style="color: var(--primary)">textarea tag with class form-textarea inside form
+              wrapper.</span>
+          </p>
+        </div>
+        <div class="showcase form-showcase m-y-6">
+          <!-- normal input -->
+
+          <div class="form-div">
+            <p class="form-label">Name</p>
+            <input type="text" class="form-input input-focused" placeholder="normal" required />
+          </div>
+
+          <!-- success -->
+
+          <div class="form-div">
+            <p class="form-label">Email address</p>
+            <i class="fas fa-check-circle is-green"></i>
+            <input type="text" class="form-input input-success" placeholder="success" />
+          </div>
+
+          <!-- error -->
+
+          <div class="form-div">
+            <p class="form-label">Address</p>
+            <i class="fas fa-exclamation-circle is-red"></i>
+            <input type="text" class="form-input input-error" placeholder="Error" />
+            <p class="form-error-text">email required</p>
+          </div>
+
+          <!-- textarea -->
+
+          <div class="form-div">
+            <p class="form-label">Comment</p>
+            <textarea name="" class="form-textarea" placeholder="start writing here..." id=""
+              style="padding:1rem"></textarea>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520normal%2520input%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-label%2522%253EName%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520input-focused%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522normal%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520required%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520success%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-label%2522%253EEmail%2520address%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-check-circle%2520is-green%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520input-success%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522success%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520error%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-label%2522%253EAddress%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-exclamation-circle%2520is-red%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2520input-error%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522Error%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-error-text%2522%253Eemail%2520required%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520textarea%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-label%2522%253EComment%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ctextarea%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-textarea%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522start%2520writing%2520here%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520id%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253E%253C%252Ftextarea%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 515px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+
+        <!-- disabled and readonly -->
+        <div class="textbox">
+          <div class="subtitle is-4 is-dark">
+            Disabled and Read-only input
+          </div>
+          <p class="text is-3 is-dark">
+            You can add form disabled by
+            <span style="color: var(--primary)">giving attribute disabled to the input.</span>
+            <br />
+            Make input read-only by
+            <span style="color: var(--primary)">giving class form-readonly to the form-div wrapper.</span>
+          </p>
+        </div>
+        <div class="showcase form-showcase m-y-6">
+          <div class="form-div">
+            <p class="form-label">Phone number</p>
+            <input type="text" class="form-input" placeholder="disabled" disabled />
+          </div>
+
+          <!-- readonly -->
+
+          <div class="form-div form-readonly">
+            <p class="form-label">Phone number</p>
+            <input type="text" class="form-input" placeholder="disabled" value="myemail@address.com" readonly />
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520disabled%2520and%2520readonly%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253E%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522showcase%2520form-showcase%2520m-y-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-label%2522%253EPhone%2520number%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522disabled%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520disabled%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520readonly%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-div%2520form-readonly%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-label%2522%253EPhone%2520number%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520type%253D%2522text%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522form-input%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520placeholder%253D%2522disabled%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520value%253D%2522myemail%2540address.com%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520readonly%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 438px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 is-dark">Misc forms</div>
+          <p class="text is-3 is-dark">
+            To add a dropdown radio and checkbox, use the code snippets below.
+          </p>
+        </div>
+        <div class="showcase form-showcase m-y-6">
+          <!-- radio button -->
+
+          <div class="form-radio">
+            <p class="form-label">Gender</p>
+            <div class="form-radio-div">
+              <label class="form-radio-label">
+                <input type="radio" name="opinion" checked />
+                <i></i>
+                <span class="form-radio-button-text">Male</span>
+              </label>
+              <label class="form-radio-label">
+                <input type="radio" name="opinion" />
+                <i></i>
+                <span class="form-radio-button-text">Female</span>
+              </label>
+              <label class="form-radio-label">
+                <input type="radio" name="opinion" />
+                <i></i>
+                <span class="form-radio-button-text">Non binary</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- dropdown -->
+
+          <div>
+            <select class="form-select">
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+
+          <!-- checkbox -->
+
+          <label class="form-checkbox">
+            <input type="checkbox" />
+            Remember me
+          </label>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%253C%21--%2520radio%2520button%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-radio%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522form-label%2522%253EGender%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-radio-div%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-radio-label%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522opinion%2522%2520checked%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-radio-button-text%2522%253EMale%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-radio-label%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522opinion%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-radio-button-text%2522%253EFemale%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-radio-label%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522radio%2522%2520name%253D%2522opinion%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522form-radio-button-text%2522%253ENon%2520binary%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520dropdown%2520--%253E%250A%2520%2520%2520%2520%2520%2520%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cselect%2520class%253D%2522form-select%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%253ESelect%2520dropdown%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Coption%253EWith%2520options%253C%252Foption%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fselect%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%250A%2520%2520%2520%2520%2520%2520%253C%21--%2520checkbox%2520--%253E%250A%250A%2520%2520%2520%2520%2520%2520%253Clabel%2520class%253D%2522form-checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522checkbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520Remember%2520me%250A%2520%2520%2520%2520%2520%2520%253C%252Flabel%253E%250A"
+                style="
+                  /* width: 546px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+
+      <!-- images -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="image" class="title p-y-1 is-6">Images</div>
+          <div class="subtitle regular is-4">
+            Both responsive images and customized circular images can be made to fit the width of the parent.
+          </div>
+          <p class="text is-3 is-dark">
+            You can add class
+            <span style="color: var(--primary)">img-responsive </span>
+            to make your image fit the width of container. It's height will
+            get adjusted by keeping the aspect ratio same. If you want to
+            change the aspect ratio, you will have to crop the image. <br />
+            You can make an image round by adding class img-round to it.
+          </p>
+        </div>
+        <div class="grid-2 img-showcase m-y-6">
+          <img class="img-responsive" src="https://picsum.photos/400/300" alt="" />
+          <img src="https://picsum.photos/200/200" alt="" class="img-round" />
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522img-responsive%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F400%252F300%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F200%252F200%2522%2520alt%253D%2522%2522%2520class%253D%2522img-round%2522%2520%252F%253E"
+                style="
+                  /* width: 654px; */
+                  height: 184px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+      <!-- LISTS -->
+      <div class="component-section m-up-6">
+        <div class="textbox">
+          <div id="list" class="title p-y-1 is-6">List</div>
+          <div class="subtitle regular is-4">
+            Lists are useful in a variety of contexts, including the navigation bar, stacked notifications, article
+            pages, etc.
+          </div>
+          <div class="subtitle is-4 m-up-4 is-dark">
+            Unordered List, Ordered List and List with no Bullet
+          </div>
+          <p class="text is-3 is-dark">
+            Add class according to bullet style. To make lis ordered add an
+            additional class list-"roman, alpha". To make List with no Bullet
+            add a class list-none.Copy html code below and add your desired
+            list items.
+          </p>
+        </div>
+        <div class="showcase avatar-showcase flex-row m-y-6">
+          <div class="list-container">
+            <div class="title" style="text-decoration: underline;">Fruits</div>
+            <ul class="list">
+              <li class="list-items">apple</li>
+              <li class="list-items">mango</li>
+              <li class="list-items">jamun</li>
+              <li class="list-items">papita</li>
+              <li class="list-items">sitaful</li>
+            </ul>
+          </div>
+          <div class="list-container m-l-5">
+            <div class="title" style="text-decoration: underline;">Category</div>
+            <ol class="list list-roman">
+              <li class="list-items">apple</li>
+              <li class="list-items">mango</li>
+              <li class="list-items">jamun</li>
+              <li class="list-items">papita</li>
+              <li class="list-items">sitaful</li>
+            </ol>
+          </div>
+          <div class="list-container m-l-5">
+            <div class="title" style="text-decoration: underline;">Category</div>
+            <ol class="list list-none">
+              <li class="list-items">apple</li>
+              <li class="list-items">mango</li>
+              <li class="list-items">jamun</li>
+              <li class="list-items">papita</li>
+              <li class="list-items">sitaful</li>
+            </ol>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=596&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522list-container%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECategory%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cul%2520class%253D%2522list%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Eapple%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Emango%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Ejamun%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Epapita%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Esitaful%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522list-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECategory%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522list%2520list-roman%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Eapple%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Emango%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Ejamun%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Epapita%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Esitaful%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522list-container%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2522%253ECategory%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522list%2520list-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Eapple%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Emango%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Ejamun%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Epapita%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2522%253Esitaful%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%253C%252Fdiv%253E"
+                style="
+                  /* width: 367px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 is-dark">Notification Stacked List</div>
+          <p class="text is-3 is-dark">
+            This is a bullet-free stacking list. Inside the "li" element, we can put any needed component. For a stacked
+            list of cards, look at the code below.
+          </p>
+        </div>
+        <div class="showcase width-100 flex-c-w">
+          <div class="notification-list center-x">
+            <ul class="list child-m-s">
+              <li class="list-items list-none">
+                <a href="" class="notification-list-link">
+                  <div class="card card-horizontal">
+                    <div class="card-head">
+                      <div class="card-image">
+                        <img src="https://picsum.photos/120/255" alt="card image" srcset="" class="card-image-img" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="textbox">
+                        <div class="title semibold">Cart Title</div>
+                        <div class="subtitle">Subtitle</div>
+                      </div>
+                      <div class="textbox">
+                        <p class="text">Lorem ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="list-items list-none">
+                <a href="" class="notification-list-link">
+                  <div class="card card-horizontal">
+                    <div class="card-head">
+                      <div class="card-image">
+                        <img src="https://picsum.photos/120/255" alt="card image" srcset="" class="card-image-img" />
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <div class="textbox">
+                        <div class="title semibold">Cart Title</div>
+                        <div class="subtitle">Subtitle</div>
+                      </div>
+                      <div class="textbox">
+                        <p class="text">Lorem ipsum</p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522notification-list%2522%253E%250A%2520%2520%253Cul%2520class%253D%2522list%2520child-m-s%2522%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2520list-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522notification-list-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F120%252F255%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-image-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520semibold%2522%253ECart%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253ESubtitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522list-items%2520list-none%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522notification-list-link%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card%2520card-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-head%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-image%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fpicsum.photos%252F120%252F255%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520alt%253D%2522card%2520image%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520srcset%253D%2522%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520class%253D%2522card-image-img%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card-body%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520semibold%2522%253ECart%2520Title%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522subtitle%2522%253ESubtitle%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2522%253ELorem%2520ipsum%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253C%252Fli%253E%250A%2520%2520%253C%252Ful%253E%250A%253C%252Fdiv%253E%250A"
+                style="
+                  /* width: 484px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+      <!-- modal -->
+      <div class="component-section m-up-6">
+        <div class="textbox">
+          <div id="modal" class="title p-y-1 is-6">Modal</div>
+          <div class="subtitle regular is-4">
+            Modals take the place of all other elements in the document and prevent scrolling. It can only be closed via
+            the close button on the modal pop-up.
+          </div>
+          <p class="text is-3 is-dark">
+            The modal includes icon, button both of them are customizable
+            ranging from size to color. Also a button close is present. Just
+            create a <span style="color: var(--primary)">modal wrapper</span>
+            and add contents inside it.
+          </p>
+        </div>
+        <div class="showcase width-100 flex-row m-y-6">
+          <div class="modal center-x shadow">
+            <button class="card-cross btn-close is-medium">
+              <i class="fas fa-times"></i>
+            </button>
+            <i class="modal-icon is-green fas fa-check-circle"></i>
+            <div class="textbox">
+              <div class="title text-center">Order Placed!</div>
+              <div class="text text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                iste corporis, maiores dolorum alias non?
+              </div>
+            </div>
+            <div class="btn-horizontal">
+              <button class="btn-grey btn-small">close</button>
+            </div>
+          </div>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253Cdiv%2520class%253D%2522modal%2520shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522card-cross%2520btn-close%2520is-medium%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-times%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522modal-icon%2520is-green%2520fas%2520fa-check-circle%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522textbox%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520text-center%2522%253EOrder%2520Placed%21%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520text-center%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520Lorem%2520ipsum%2520dolor%2520sit%2520amet%2520consectetur%2520adipisicing%2520elit.%2520Sunt%2520iste%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520corporis%252C%2520maiores%2520dolorum%2520alias%2520non%253F%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522btn-horizontal%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-grey%2520btn-small%2522%253Eclose%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 623px; */
+                  height: 368px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+
+      <!-- navigation -->
+      <div class="component-section m-up-6">
+        <div class="textbox">
+          <div id="navigation" class="title p-y-1 is-6">Navigation</div>
+          <div class="subtitle regular is-4">
+            The navigation bar is used to navigate web applications and websites. This navigational element responds to
+            user input. In small and medium devices, there is a hamburger menu.
+          </div>
+          <p class="text is-3 is-dark">
+            The navigation bar in Elegance Ui has built-in buttons, icons, and a search bar that are all totally
+            adjustable. Use the code snippet from below to use the navigation component; you can remove the code for a
+            certain element to make it disappear.
+          </p>
+        </div>
+        <div class="showcase avatar-showcase m-y-6">
+          <!-- navbar -->
+          <nav class="navbar li-shadow">
+            <div class="nav-brand">
+              <a href="" class="logo-a">
+                <!-- <img class="logo-s" src="/documentation/images/02 - Colorful - Icon Only.png" alt="Lucid Ui logo" /> -->
+                <img class="logo-s" src="./images/02 - Colorful - Icon Only.png" alt="Elegance Ui logo" />
+              </a>
+            </div>
+            <div class="nav-hamburger">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-menu">
+              <div class="nav-start is-2">
+                <a href="" class="nav-item link">Home</a>
+                <a href="" class="nav-item link">Product</a>
+                <a href="" class="nav-item link">About Us</a>
+                <a href="" class="nav-item link">Contact Us</a>
+              </div>
+              <div class="nav-end">
+                <div class="form-div nav-search m-x-3">
+                  <i class="fas fa-search is-blue"></i>
+                  <input type="text" class="form-input br-3" placeholder="search" />
+                </div>
+                <button class="btn-icon showcase-nav-icons nav-icons m-x-1">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="btn-icon showcase-nav-icons nav-icons m-x-1">
+                  <i class="fas fa-bell"></i>
+                </button>
+                <button class="btn-icon showcase-nav-icons nav-icons m-x-1">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <button class="btn-secondary nav-btn btn-small">
+                  Sign up
+                </button>
+                <button class="btn-primary nav-btn btn-small">Log in</button>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="code-snippet m-y-6">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520navbar%2520--%253E%250A%2520%2520%2520%2520%253Cnav%2520class%253D%2522navbar%2520shadow%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-brand%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522logo-a%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-suitcase%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-hamburger%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bars%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-menu%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-start%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522nav-item%2520link%2522%253EHome%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522nav-item%2520link%2522%253EProduct%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522nav-item%2520link%2522%253EAbout%2520Us%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2522%2520class%253D%2522nav-item%2520link%2522%253EContact%2520Us%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522nav-end%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522form-div%2520nav-search%2520m-x-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-search%2520is-blue%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522text%2522%2520class%253D%2522form-input%2520br-3%2522%2520placeholder%253D%2522search%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520nav-icons%2520m-x-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520nav-icons%2520m-x-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-bell%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-icon%2520nav-icons%2520m-x-1%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-heart%2522%253E%253C%252Fi%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-secondary%2520nav-btn%2520btn-small%2522%253ESign%2520up%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-primary%2520nav-btn%2520btn-small%2522%253ELog%2520in%253C%252Fbutton%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fnav%253E"
+                style="
+                  /* width: 638px; */
+                  height: 500px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+
+      <!-- rating -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="rating" class="title p-y-1 is-6">Rating</div>
+          <div class="subtitle regular is-4">
+            The reviews section or read-only badge can both use rating components. Can also be used as a form in the
+            reviews area.
+          </div>
+          <p class="text is-3 is-dark">
+            Five star rating component. To use it
+            <span style="color: var(--primary)">
+              create a rating wrapper and inside it add span class with i
+              class </span>. Use the code snippet below for reference.
+          </p>
+        </div>
+        <div class="showcase avatar-showcase m-y-6">
+          <div class="rating">
+            <span class="rating-star"><i class="fas fa-star"></i></span><span class="rating-star"><i
+                class="fas fa-star"></i></span><span class="rating-star"><i class="fas fa-star"></i></span><span
+              class="rating-star"><i class="fas fa-star"></i></span><span class="rating-star"><i
+                class="fas fa-star"></i></span>
+            <span class="rating-result">4 <i class="fas fa-star"></i></span>
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=555&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%253Cdiv%2520class%253D%2522rating%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-star%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%253E%253Cspan%2520class%253D%2522rating-star%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%253E%253Cspan%2520class%253D%2522rating-star%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%253E%253Cspan%2520class%253D%2522rating-star%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%250A%2520%2520%2520%2520%2520%2520%253E%253Cspan%2520class%253D%2522rating-star%2522%253E%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522rating-result%2522%253E4%2520%253Ci%2520class%253D%2522fas%2520fa-star%2522%253E%253C%252Fi%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 577px; */
+                  height: 221px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+      <!-- GRID -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="grid" class="title p-y-1 is-6">Grid simplified</div>
+          <div class="subtitle regular is-4">
+            When you want sections to be visible, use a grid.
+          </div>
+          <p class="text is-3 is-dark">
+            Elegance Ui contains 6 types of grid classes.
+            <span style="color: var(--primary)">
+              To create a grid add on of the 6 classes grid-2, grid-3, grid-4,
+              grid-30-70, grid-70-30, grid-20-80 </span>. Use the code snippet below for reference.
+          </p>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-4 is-dark">Grid-2</div>
+          <p class="text is-3 is-dark">
+            This grid creates a 2 equally divided grid.
+          </p>
+        </div>
+        <div class="showcase m-y-6">
+          <div class="grid-showcase grid-2">
+            <div class="one"></div>
+            <div class="two"></div>
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-2%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 276px; */
+                  height: 148px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-4 is-dark">Grid-3</div>
+          <p class="text is-3 is-dark">
+            This grid creates a 3 equally divided grid.
+          </p>
+        </div>
+        <div class="showcase m-y-6">
+          <div class="grid-showcase grid-3">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-3%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 276px; */
+                  height: 166px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-4 is-dark">Grid-4</div>
+          <p class="text is-3 is-dark">
+            This grid creates a 4 equally divided grid.
+          </p>
+        </div>
+        <div class="showcase m-y-6">
+          <div class="grid-showcase grid-4">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-4%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 276px; */
+                  height: 184px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-4 is-dark">Unequal grids</div>
+          <p class="text is-3 is-dark">
+            We have 3 grids in Unequal category,
+            <span style="color: var(--primary)">grid-30-70 , grid-70-30 , grid-20-80</span>. They divide grid into 2
+            sections of respective percentages.
+          </p>
+        </div>
+        <div class="showcase m-y-6">
+          <div class="grid-showcase grid-30-70">
+            <div class="one"></div>
+            <div class="two"></div>
+          </div>
+          <div class="grid-showcase grid-70-30">
+            <div class="one"></div>
+            <div class="two"></div>
+          </div>
+          <div class="grid-showcase grid-20-80">
+            <div class="one"></div>
+            <div class="two"></div>
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-30-70%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-70-30%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522grid-20-80%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 315px; */
+                  height: 295px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+      </div>
+      <!-- Typography -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="typography" class="title p-y-1 is-6">Typography</div>
+          <div class="subtitle regular is-4">
+            Numerous text tools are available in Elegance Ui. Look into them.
+          </div>
+          <p class="text is-3 is-dark">
+            There are four main types of text classes
+            <span style="color: var(--primary)">
+              title, subtitle, text, CTA-text you can use these inside textbox
+              div or idividually </span>. Additionaly you can change font weight and color of any text by
+            using regular,bold,light,semibold and is-"color" class
+            respectively.
+          </p>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-5 is-dark">Heading</div>
+          <p class="text is-3 is-dark">
+            To provide a heading, use title class, and to specify its size, use is-"font size". The sizes range from 1
+            to 6, with 1 being the smallest and 6 being the largest.
+          </p>
+        </div>
+        <div class="showcase flex-c-w m-y-6">
+          <div class="title is-6">Size 6 Heading</div>
+          <div class="title is-5">Size 5 Heading</div>
+          <div class="title is-4">Size 4 Heading</div>
+          <div class="title is-3">Size 3 Heading</div>
+          <div class="title is-2">Size 2 Heading</div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520is-6%2522%253ESize%25206%2520Heading%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520is-5%2522%253ESize%25205%2520Heading%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520is-4%2522%253ESize%25204%2520Heading%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520is-3%2522%253ESize%25203%2520Heading%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522title%2520is-2%2522%253ESize%25202%2520Heading%253C%252Fdiv%253E"
+                style="
+                  /* width: 469px; */
+                  height: 166px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-5 is-dark">Paragraph Text</div>
+          <p class="text is-3 is-dark">
+            Use is-"font size" to specify a heading's size after defining it using title class. Six sizes are offered,
+            with size 1 being the smallest and size 6 being the largest.
+          </p>
+        </div>
+        <div class="showcase flex-c-w m-y-6">
+          <div class="text regular is-dark is-6">Size 6 text</div>
+          <div class="text regular is-dark is-5">Size 5 text</div>
+          <div class="text regular is-dark is-4">Size 4 text</div>
+          <div class="text regular is-dark is-3">Size 3 text</div>
+          <div class="text regular is-dark is-2">Size 2 text</div>
+          <div class="text regular is-dark is-1">Size 1 text</div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520regular%2520is-dark%2520is-6%2522%253ESize%25206%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520regular%2520is-dark%2520is-5%2522%253ESize%25205%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520regular%2520is-dark%2520is-4%2522%253ESize%25204%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520regular%2520is-dark%2520is-3%2522%253ESize%25203%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520regular%2520is-dark%2520is-2%2522%253ESize%25202%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520regular%2520is-dark%2520is-1%2522%253ESize%25201%2520text%253C%252Fdiv%253E"
+                style="
+                  /* width: 561px; */
+                  height: 184px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-5 is-dark">Text position</div>
+          <p class="text is-3 is-dark">
+            Three text positions—text-left, text-center, and text-right—are accessible.
+          </p>
+        </div>
+        <div class="showcase flex-c-w m-y-6">
+          <div class="text text-center is-dark is-5">Size 6 text center</div>
+          <div class="text text-right is-dark is-5">Size 5 text right</div>
+          <div class="text text-left is-dark is-5">Size 4 text left</div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=848&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520text-center%2520is-dark%2520is-5%2522%253ESize%25206%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520text-right%2520is-dark%2520is-5%2522%253ESize%25205%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522text%2520text-left%2520is-dark%2520is-5%2522%253ESize%25204%2520text%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520"
+                style="
+                  /* width: 596px; */
+                  height: 148px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-5 is-dark">Text utilities</div>
+          <p class="text is-3 is-dark">
+            There are many text utilities ranging from color to underline.
+          </p>
+        </div>
+        <div class="showcase flex-c-w m-y-6">
+          <p class="text is-3 is-light">Elegance Ui is awesome.</p>
+          <p class="text is-3 is-blue">Elegance Ui is awesome.</p>
+          <p class="text is-3 is-red">Elegance Ui is awesome.</p>
+          <p class="text is-3 is-green">Elegance Ui is awesome.</p>
+          <p class="text is-3 is-dark">Elegance Ui is awesome.</p>
+          <p class="text is-3 light">Elegance Ui is awesome.</p>
+          <p class="text is-3 semibold">Elegance Ui is awesome.</p>
+          <p class="text is-3 bold">Elegance Ui is awesome.</p>
+          <p class="text is-3 strike">LucEleganceid Ui is awesome.</p>
+          <p class="text is-3 underline">Elegance Ui is awesome.</p>
+          <p class="subtitle is-dark is-3">Elegance Ui is awesome.</p>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=596&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520is-light%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520is-blue%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520is-red%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520is-green%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520is-dark%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520light%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520semibold%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520bold%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520strike%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522text%2520is-3%2520underline%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cp%2520class%253D%2522subtitle%2520is-dark%2520is-3%2520%2522%253ELucid%2520Ui%2520is%2520awesome.%253C%252Fp%253E"
+                style="
+                  /* width: 596px; */
+                  height: 276px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+      </div>
+      <!-- Toast -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="toast" class="title p-y-1 is-6">Toast</div>
+          <div class="subtitle regular is-4">
+            This part can be utilized as a snackbar or toast part. Most often, toast is utilized to display feedback
+            messages. Snackbar is used to display messages that require user interaction.
+          </div>
+          <p class="text is-3 is-dark">
+            Toast comes in three categories ranging from primary, success and
+            error.
+            <span style="color: var(--primary)">
+              create a toast wrapper and inside it add anyone of
+              toast-primary, toast-success, toast-error </span>. Use the code snippet below for reference. Please note
+            that by
+            default the toast visibility is hidden.
+          </p>
+        </div>
+        <div class="showcase toast-showcase m-y-6">
+          <div class="toast toast-success visible">
+            Success msg ...
+            <button class="btn-close text-left">
+              <i class="m-l-1 fas fa-times"></i>
+            </button>
+          </div>
+          <div class="toast toast-error visible">
+            Error msg ...
+            <button class="btn-close">
+              <i class="m-l-1 fas fa-times"></i>
+            </button>
+          </div>
+          <div class="toast toast-primary visible">
+            Primary msg ...
+            <button class="btn-close">
+              <i class="m-l-1 fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=596&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-success%2522%253E%250A%2520%2520%2520%2520%2520%2520Success%2520msg%2520...%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-close%2522%253E%253Ci%2520class%253D%2522m-l-1%2520fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-error%2522%253E%250A%2520%2520%2520%2520%2520%2520Error%2520msg%2520...%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-close%2522%253E%253Ci%2520class%253D%2522m-l-1%2520fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522toast%2520toast-primary%2522%253E%250A%2520%2520%2520%2520%2520%2520Primary%2520msg%2520...%250A%2520%2520%2520%2520%2520%2520%253Cbutton%2520class%253D%2522btn-close%2522%253E%253Ci%2520class%253D%2522m-l-1%2520fas%2520fa-times%2522%253E%253C%252Fi%253E%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 596px; */
+                  height: 250px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+          <hr />
+        </div>
+      </div>
+      <!-- SLIDER -->
+      <div class="component-section">
+        <div class="textbox">
+          <div id="slider" class="title p-y-1 is-6">Slider</div>
+          <div class="subtitle regular is-4">
+            Sliders are used to choose a range for things like sound in films and price in online stores, among other
+            things.
+          </div>
+          <p class="text is-3 is-dark">
+            Slider comes in three categories ranging from .
+            <span style="color: var(--primary)">
+              slider with range, slider with icon and slider disabled </span>. Use the code snippet below for reference.
+          </p>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-4 is-dark">Ranged Slider</div>
+          <p class="text is-3 is-dark">
+            This slider has class name of quantity-slider you can manually set
+            the range.
+          </p>
+        </div>
+        <div class="showcase width-50 m-y-6">
+          <!-- quantity slider -->
+          <div class="quantity-slider">
+            <div class="slider-range">
+              <span class="slider-range-min">50</span>
+              <span class="slider-range-mid">100</span>
+              <span class="slider-range-max">200</span>
+            </div>
+            <input type="range" min="1" max="5000" class="slider" />
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=596&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520quantity%2520slider%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522quantity-slider%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522slider-range%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522slider-range-min%2522%253E50%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522slider-range-mid%2522%253E100%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522slider-range-max%2522%253E200%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%25225000%2522%2520class%253D%2522slider%2522%2520%252F%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E"
+                style="
+                  /* width: 596px; */
+                  height: 222px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-4 is-dark">Icon Slider</div>
+          <p class="text is-3 is-dark">
+            You can attach an icon to this slider.
+          </p>
+        </div>
+        <div class="showcase width-50 m-y-6">
+          <div class="icon-slider">
+            <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M22 0v24l-11-6v-2.278l9 4.909v-17.262l-9 4.91v-2.279l11-6zm-13 6v12h-7v-12h7z" />
+              </svg></span>
+            <input type="range" min="1" max="5000" class="slider" />
+          </div>
+        </div>
+        <div class="code-snippet m-y-4">
+          <code>
+              <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%2814%2C13%2C12%2C0%29&t=vscode&wt=sharp&l=htmlmixed&width=596&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Fira+Code&fs=12.5px&lh=147%25&si=false&es=2x&wm=false&code=%2520%253Cdiv%2520class%253D%2522icon-slider%2522%253E%250A%2520%2520%253Cspan%2520class%253D%2522%2522%253E%250A%2520%2520%2520%2520%253Csvg%250A%2520%2520%2520%2520%2520%2520xmlns%253D%2522http%253A%252F%252Fwww.w3.org%252F2000%252Fsvg%2522%250A%2520%2520%2520%2520%2520%2520width%253D%252224%2522%250A%2520%2520%2520%2520%2520%2520height%253D%252224%2522%250A%2520%2520%2520%2520%2520%2520viewBox%253D%25220%25200%252024%252024%2522%250A%2520%2520%2520%2520%253E%250A%2520%2520%2520%2520%2520%2520%253Cpath%2520d%253D%2522M22%25200v24l-11-6v-2.278l9%25204.909v-17.262l-9%25204.91v-2.279l11-6zm-13%25206v12h-7v-12h7z%2522%2520%252F%253E%250A%2520%2520%2520%2520%253C%252Fsvg%253E%250A%2520%2520%253C%252Fspan%253E%250A%2520%2520%253Cinput%2520type%253D%2522range%2522%2520min%253D%25221%2522%2520max%253D%25225000%2522%2520class%253D%2522slider%2522%2520%252F%253E%250A%253C%252Fdiv%253E%250A"
+                style="
+                  height: 250px;
+                  border: 0;
+                  transform: scale(1);
+                  overflow: hidden;
+                "
+                sandbox="allow-scripts allow-same-origin"
+              >
+              </iframe>
+            </code>
+        </div>
+        <div class="textbox">
+          <div class="subtitle is-4 m-up-4 is-dark">Disabled Slider</div>
+          <p class="text is-3 is-dark">
+            To make any of the aforementioned sliders disabled, simply add the disabled property.
+          </p>
+        </div>
+        <div class="showcase m-y-6">
+          <div class="grid-showcase grid-2">
+            <div class="icon-slider">
+              <span class=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path d="M22 0v24l-11-6v-2.278l9 4.909v-17.262l-9 4.91v-2.279l11-6zm-13 6v12h-7v-12h7z" />
+                </svg></span>
+              <input type="range" min="1" max="5000" class="slider" disabled />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-div m-up-3 has-acent p-up-2">
+          <div class="textbox">
+            <div class="text is-dark text-center">
+              Made with <span class="is-blue">&lt/&gt</span> by <strong> Toufiq Choudhari</strong>
+            </div>
+            <div class="footer-icons text-center">
+              <a href="https://www.linkedin.com/in/toufiq-choudhari-56208b203/">
+                <button class="btn-icon nav-icons m-x-1">
+                  <i class="fab fa-linkedin is-4"></i>
+                </button>
+              </a>
+
+              <a href="https://github.com/iamtoufiq">
+                <button class="btn-icon nav-icons m-x-1">
+                  <i class="fab fa-github-square is-4"></i>
+                </button>
+              </a>
+            </div>
+            <div class="text text-center is-2">© 2023 Elegance Ui</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- <script src="js/index.js"></script> -->
+  <script src="./js/index.js"></script>
+  <!-- <script src="../components/darkmode/darkmode.js"></script> -->
+  <script src="../components/darkmode/darkmode.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.toast {
+  padding: var(--xs) var(--xxs) var(--xs) var(--xs);
+  border-radius: var(--border-radius-s);
+  font-size: var(--is-3);
+  position: fixed;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: var(--l);
+  visibility: hidden;
+}
+.toast-success {
+  color: var(--green);
+  background-color: var(--very-light-green);
+}
+.toast-error {
+  color: var(--red);
+  background-color: var(--very-light-red);
+}
+.toast-primary {
+  color: var(--blue);
+  background-color: var(--very-light-blue);
+}

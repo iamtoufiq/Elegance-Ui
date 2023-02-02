@@ -1,0 +1,213 @@
+/* buttons and links start here */
+
+/* links */
+
+/* Primary link */
+
+.link {
+  font-size: inherit;
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+.link:hover {
+  color: var(--secondary);
+}
+.underline {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* secondary link */
+
+.link-secondary {
+  font-size: inherit;
+  color: var(--font-lighter);
+  text-decoration: underline;
+  text-underline-position: under;
+  font-weight: var(--bold);
+}
+.link-secondary:hover {
+  color: var(--font-light);
+}
+
+/* Buttons */
+
+/* button with size */
+
+.btn-large {
+  font-weight: var(--bold);
+  cursor: pointer;
+  font-size: 2.1rem;
+  width: 12rem;
+  height: 4.8rem;
+  padding: var(--xxs) var(--s);
+  min-width: fit-content;
+  min-height: fit-content;
+  border: none;
+  border-radius: var(--border-radius-l);
+}
+.btn-medium {
+  font-weight: var(--bold);
+  width: 10rem;
+  height: 4rem;
+  cursor: pointer;
+  font-size: var(--is-3);
+  background-color: var(--primary);
+  padding: var(--xxs) var(--s);
+  min-width: fit-content;
+  min-height: fit-content;
+  border: none;
+  border-radius: var(--border-radius-m);
+  color: var(--white);
+}
+.btn-small {
+  font-weight: var(--bold);
+  cursor: pointer;
+  font-size: 1.4rem;
+  background-color: var(--primary);
+  width: 9rem;
+  height: 3.2rem;
+  padding: var(--xxs) var(--s);
+  min-width: fit-content;
+  min-height: fit-content;
+  border: none;
+  border-radius: var(--border-radius-s);
+  color: var(--white);
+}
+.btn-rounded {
+  border-radius: 3rem;
+}
+
+/* button with icons */
+
+.btn-w-icon :nth-child(1) {
+  margin-right: var(--xxs);
+}
+
+/* icon button */
+
+.btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  font-size: var(--s);
+  padding: var(--xxs);
+  width: min-content;
+  height: min-content;
+  border-radius: var(--border-radius-circle);
+  border: none;
+  cursor: pointer;
+}
+.btn-icon:hover {
+  background-color: var(--grey);
+}
+
+/* button float */
+
+.btn-float {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  font-size: var(--is-3);
+  width: 5rem;
+  height: 5rem;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--primary);
+}
+.btn-float:hover {
+  background-color: var(--hover);
+}
+
+/* primary button */
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--primary);
+}
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+/* button secondary */
+
+.btn-secondary {
+  background-color: transparent;
+  border: solid 2px var(--primary);
+  color: var(--primary);
+}
+.btn-secondary:hover {
+  border: solid 2px var(--hover);
+  color: var(--hover);
+}
+.btn-secondary-grey {
+  background-color: transparent;
+  border: solid 2px var(--font-light);
+  color: var(--font-light);
+}
+
+/* button disabled */
+
+.btn-disabled {
+  background-color: var(--grey);
+  cursor: auto;
+}
+.btn-disabled:hover {
+  background-color: var(--grey);
+  cursor: auto;
+}
+
+/* close button */
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+.btn-close:hover {
+  color: var(--red);
+}
+
+/* button vertical */
+
+.btn-vertical > * {
+  width: 100%;
+}
+.btn-vertical :nth-child(n + 2) {
+  margin-top: var(--xxs);
+}
+
+/* button grey */
+
+.btn-grey {
+  background-color: var(--font-lighter);
+}
+.btn-grey:hover {
+  background-color: var(--font-light);
+}
+
+/* button horizontal */
+
+.btn-horizontal {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* button  horizontal responsive */
+
+@media only screen and (max-width: 480px) {
+  .btn-horizontal-responsive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-horizontal-responsive > :nth-child(2) {
+    margin-top: var(--xs);
+  }
+  .btn-horizontal-responsive > :nth-child(n) {
+    width: 90%;
+  }
+}

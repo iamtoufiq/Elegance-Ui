@@ -1,0 +1,191 @@
+.hero-img {
+  width: 90%;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* documentation */
+iframe {
+  border-radius: var(--border-radius-l);
+}
+.lucid-span {
+  font-size: 9rem;
+}
+.card-horizontal {
+  max-width: 700px;
+}
+.notification-list-link .card-horizontal {
+  width: fit-content;
+}
+.toast-showcase .toast {
+  position: inherit;
+  z-index: 0;
+  width: fit-content;
+}
+.grid-documentation {
+  position: relative;
+  z-index: 3;
+}
+.component {
+  z-index: 1;
+}
+.component-list {
+  z-index: 2;
+}
+.component-list > .textbox {
+  top: 0;
+  position: sticky;
+}
+.showcase > * {
+  margin-top: var(--s);
+}
+.avatar-showcase {
+  flex-wrap: wrap;
+  width: 100%;
+}
+.avatar-showcase > * {
+  margin-right: 10px;
+}
+.badge-showcase > * {
+  margin-right: 100px;
+}
+.button-showcase {
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.button-showcase > * {
+  margin-right: 70px;
+}
+.cards-showcase {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.form-showcase {
+  width: 70%;
+}
+.img-showcase {
+  width: 100%;
+}
+.img-showcase :nth-child(2) {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 50%;
+}
+/* horizontak card showcase */
+
+.showcase-horizontal-card {
+  height: min-content;
+}
+
+/* grid */
+.grid-showcase {
+  width: 100%;
+}
+.grid-showcase > * {
+  height: 100px;
+}
+.one {
+  background-color: var(--primary);
+}
+.two {
+  background-color: var(--black);
+}
+.three {
+  background-color: var(--grey);
+}
+.four {
+  background-color: var(--font-light);
+}
+
+/* showcase navbar customization */
+.nav-end {
+  justify-content: flex-end;
+}
+.nav-search {
+  margin-right: 40px;
+  flex-basis: 150px;
+}
+.nav-start {
+  width: 60%;
+}
+@media only screen and (max-width: 1450px) {
+  .navbar {
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 100%;
+  }
+  .nav-brand {
+    width: 7%;
+  }
+  .nav-menu {
+    width: 93%;
+  }
+  .nav-start {
+    font-size: var(--is-2);
+    width: 60%;
+  }
+  .nav-end {
+    justify-content: flex-end;
+  }
+  .nav-search {
+    margin-right: 40px;
+    flex-basis: 150px;
+  }
+}
+@media only screen and (max-width: 1374px) {
+  .nav-search {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1168px) {
+  .showcase-nav-icons {
+    display: none;
+  }
+}
+
+/* Carbon code snippet responsive */
+
+code iframe {
+  width: 70vw;
+  background-color: #1e1e1e;
+}
+
+@media only screen and (max-width: 768px) {
+  code iframe {
+    width: 100%;
+  }
+}
+
+/* on mobile size make navbar disappear */
+
+@media only screen and (max-width: 480px) {
+}
+
+/* component-list responsive */
+
+@media only screen and (max-width: 1024px) {
+  .component-list .textbox .title {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .component-list {
+    display: none;
+  }
+  .component {
+    padding-left: 10px;
+    /* padding-right: 5px; */
+    width: 90vw;
+  }
+}
+.dis-none {
+  display: none;
+}

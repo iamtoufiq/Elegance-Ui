@@ -1,0 +1,146 @@
+/* rating */
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: var(--is-3);
+  color: var(--grey);
+}
+.rating > :nth-child(-n + 4) {
+  color: var(--primary);
+}
+.rating > :nth-child(n + 1) {
+  margin-left: var(--micro);
+}
+.rating-result {
+  padding: var(--micro);
+  border-radius: var(--micro);
+  background-color: var(--grey);
+  color: var(--font-dark);
+  font-size: var(--is-2);
+}
+.rating-result i {
+  color: var(--yellow);
+}
+
+/* Form */
+
+.form {
+  width: 50%;
+  flex-direction: column;
+  padding: var(--m);
+  display: flex;
+}
+.form > :nth-child(n + 2) {
+  margin-top: var(--m);
+}
+
+.form-div i {
+  font-size: var(--is-3);
+  position: absolute;
+  padding: var(--xs);
+  text-align: left;
+}
+.form-error-text {
+  width: 100%;
+  font-size: var(--is-2);
+  color: var(--red);
+  font-weight: var(--bold);
+}
+
+/* form label */
+
+.form-label {
+  font-weight: var(--semibold);
+  margin-top: 0px;
+  font-size: var(--is-3);
+  line-height: var(--lineHeight-is-3);
+}
+
+/* form input */
+
+.form-input {
+  padding: var(--xxs) var(--s) var(--xxs) 40px;
+  height: 3.4rem;
+  font-size: var(--is-2);
+  width: 110%;
+  border-radius: var(--border-radius-s);
+  border: var(--border) solid var(--grey);
+}
+@-moz-document url-prefix() {
+  .form-input {
+    width: 100%;
+  }
+}
+
+.form-input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border: var(--border) solid var(--primary);
+}
+
+/* form input styles */
+
+.input-success {
+  border: var(--border) solid var(--green);
+}
+.input-error {
+  border: var(--border) solid var(--red);
+}
+
+/* form textarea */
+
+.form-textarea {
+  border: var(--border) solid var(--grey);
+  font-size: var(--is-2);
+  width: 100%;
+  height: 150px;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-radius: var(--border-radius-s);
+}
+.form-textarea:focus {
+  border: var(--border) solid var(--primary);
+}
+
+/* radio button */
+
+.form-radio-div {
+  display: flex;
+  width: 100%;
+}
+.form-radio-label {
+  padding: var(--micro);
+  display: flex;
+  align-items: center;
+  font-size: var(--is-2);
+}
+.form-radio-button-text {
+  margin-left: var(--micro);
+}
+
+/* dropdown */
+
+.form-select {
+  border-radius: var(--border-radius-s);
+  width: 100%;
+  padding: var(--xxs) var(--s);
+  font-size: var(--is-2);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border: var(--border) solid var(--grey);
+}
+.form-select:focus {
+  border: var(--border) solid var(--primary);
+}
+
+/* checkbox */
+
+.form-checkbox {
+  font-size: var(--is-2);
+  display: inline-flex;
+  align-items: center;
+}
+.form-checkbox input {
+  margin-right: var(--micro);
+}

@@ -1,0 +1,118 @@
+/* Start */
+/* font is imported below */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@200;300;400;600;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+/* fonts */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--font-dark);
+}
+
+/* Color Palette */
+
+:root {
+  --font-two: "Nunito", sans-serif;
+  --primary: #3d53f5;
+  --secondary: #563fd8;
+  --tertiary: #c7e8f3;
+  --accent: #fafbff;
+  --font-dark: #171717;
+  --font-light: #757575;
+  --font-lighter: #9e9e9e;
+  --grey: #e0e0e0;
+  --blue: #3d53f5;
+  --red: #df1642;
+  --green: #18a957;
+  --yellow: #ffbb38;
+  --permanent-white: white;
+  --very-light-blue: #e4eeff;
+  --very-light-green: #e6f6e7;
+  --very-light-red: #ffd0cd;
+  --very-light-yellow: #fdf7e8;
+  --white: white;
+  --black: black;
+  --hover: #6475f7;
+  --hover-red: #fe0c0c;
+  --shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  --li-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --dk-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.dark-theme {
+  background-color: #171717;
+  --grey: #2a2d2f;
+  --font-lighter: #a29f9b;
+  --card-background: #191919;
+  --font-dark: #d9d6d1;
+  --accent: #191c1d;
+  --tertiary: #103d4c;
+  --very-light-green: #13341d;
+  --very-light-blue: #202224;
+  --very-light-red: #510500;
+  --very-light-yellow: #3d2d05;
+  --shadow: 0px 8px 16px 0px #0d0d0d;
+  --elevated: #212121;
+}
+
+/* spacing variables*/
+
+:root {
+  --micro: 3px;
+  --xxs: 8px;
+  --xs: 10px;
+  --s: 16px;
+  --m: 24px;
+  --l: 32px;
+  --xl: 40px;
+  --xxl: 64px;
+}
+
+/* fontsizes */
+
+:root {
+  --is-1: 0.8rem;
+  --lineHeight-is-1: 1.6rem;
+  --is-2: 1.2rem;
+  --lineHeight-is-2: 2rem;
+  --is-3: 1.6rem;
+  --lineHeight-is-3: 2.4rem;
+  --is-4: 2.4rem;
+  --lineHeight-is-4: 3.2rem;
+  --is-5: 3.2rem;
+  --lineHeight-is-5: 4rem;
+  --is-6: 6.4rem;
+  --lineHeight-is-6: 4.8rem;
+}
+
+/* border radius */
+
+:root {
+  --border-radius-s: 6px;
+  --border-radius-m: 11px;
+  --border-radius-l: 16px;
+  --border-radius-circle: 50%;
+}
+
+/* font weights */
+
+:root {
+  --very-light: 200;
+  --light: 300;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  --bolder: 900;
+}
+
+/* border */
+
+:root {
+  --border: 2px;
+}

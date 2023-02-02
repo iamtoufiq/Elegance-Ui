@@ -1,0 +1,160 @@
+/* Basic card */
+
+.card {
+  background-color: var(--card-background);
+  width: 310px;
+  border-radius: var(--xs);
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: var(--xs);
+  overflow: hidden;
+  position: relative;
+}
+.card-head {
+  position: relative;
+  width: 100%;
+}
+.card-body {
+  padding-left: var(--m);
+  padding-right: var(--m);
+}
+
+/* Card image */
+
+.card-image {
+  border: none;
+  width: 100%;
+  background-color: var(--grey);
+}
+.card-image-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: fill;
+}
+
+/* card cross */
+
+.card-cross {
+  position: absolute;
+  font-size: var(--is-4);
+  color: var(--grey);
+  top: var(--xxs);
+  right: var(--xxs);
+  cursor: pointer;
+}
+
+/* card icon */
+
+.card-icon {
+  position: absolute;
+  font-size: var(--is-4);
+  color: var(--permanent-white);
+  bottom: var(--xxs);
+  right: var(--xxs);
+  cursor: pointer;
+}
+.card-icon i:hover {
+  color: var(--hover-red);
+}
+
+/* card badge */
+
+.card-badge {
+  position: absolute;
+  font-size: var(--is-3);
+  top: var(--xs);
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 3px;
+  background-color: var(--primary);
+  color: var(--permanent-white);
+}
+
+/* card text overlay */
+
+.card-overlay {
+  opacity: 0.2;
+}
+.card-overlay-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-overlay-text .textbox {
+  /* background-color: var(--grey); */
+}
+
+/* card horizontal */
+
+.card-horizontal {
+  padding: var(--xxs);
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  min-width: min-content;
+  width: auto;
+  flex-wrap: nowrap;
+  max-width: fit-content;
+  min-height: min-content;
+}
+.card-horizontal .card-head {
+  width: 25%;
+  overflow: hidden;
+}
+.card-horizontal .card-head .card-image {
+  border-radius: var(--xs);
+  overflow: hidden;
+}
+.card-horizontal .card-head .card-icon {
+  color: var(--permanent-white);
+}
+.card-horizontal .card-body {
+  width: 75%;
+}
+
+@media only screen and (max-width: 480px) {
+  .card-horizontal .card-head {
+    width: 25%;
+    overflow: hidden;
+  }
+  .card-horizontal .card-head .card-image {
+    width: 100px;
+  }
+  .card-horizontal {
+    justify-content: right;
+  }
+  .card-horizontal .card-head {
+    width: min-content;
+    overflow: hidden;
+  }
+  .card-horizontal .card-body {
+    padding-right: 0px;
+    padding-left: var(--xs);
+  }
+  .card-horizontal .card-body .btn-horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-horizontal .card-body .btn-horizontal > :nth-child(2) {
+    margin-top: var(--xs);
+  }
+}
+
+/* card text only */
+
+.card-text-only {
+  max-height: fit-content;
+  min-height: min-content;
+}
+
+/* End  */
