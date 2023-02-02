@@ -1,12 +1,25 @@
 /* this is the parents css file */
 @import "./base/reset.css";
+
 @import "./components/avatar.css";
+
+/* @import "/components/alert.css"; */
+@import "./components/alert.css";
+
 @import "./components/button.css";
+
 @import "./components/card.css";
+
 @import "./components/grid.css";
+
 @import "./components/inputs.css";
+
 @import "./components/modal.css";
+
 @import "./components/range-list.css";
+
 @import "./components/toast.css";
+
 @import "./utilities/utilities.css";
+
 @import "./base/base.css";
