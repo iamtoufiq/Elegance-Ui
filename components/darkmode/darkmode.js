@@ -1,8 +1,10 @@
 // dark mode switch
+
 const darkMode = document.querySelectorAll(".dark-mode");
 if (localStorage.getItem("darkMode") === null) {
   localStorage.setItem("darkMode", "false");
 }
+
 const checkStatus = () => {
   if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("dark-theme");
@@ -26,3 +28,5 @@ darkMode.forEach((item) =>
     changeStatus();
   })
 );
+const copyRightYear = document.querySelector("#copyRight-year");
+copyRightYear.innerText = `© ${new Date().getFullYear()} Elegance Ui`;
